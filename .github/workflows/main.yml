@@ -5,6 +5,9 @@ on:
     - cron: '0 21 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write # 增加写文件权限
+  
 jobs:
   build:
     runs-on: ubuntu-latest
