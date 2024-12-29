@@ -1,6 +1,6 @@
 # chnroute
 
-[![built with Codeium](https://codeium.com/badges/main)](https://codeium.com) [![Daily Make and Commit](https://github.com/ruijzhan/chnroute/actions/workflows/main.yaml/badge.svg)](https://github.com/ruijzhan/chnroute/actions/workflows/main.yaml)
+[![built with Codeium](https://codeium.com/badges/main)](https://codeium.com) [![Daily Make and Commit](https://github.com/cmunfun/ros_chnroute/actions/workflows/main.yaml/badge.svg)](https://github.com/cmunfun/ros_chnroute/actions/workflows/main.yaml)
 
 ## 自动更新的中国 IP 地址和特定域名列表
 
@@ -38,11 +38,11 @@ make
 ```ros
 /system script
 add dont-require-permissions=no name=cn owner=admin policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="
-/tool fetch url=https://raw.githubusercontent.com/ruijzhan/chnroute/master/CN.rsc
+/tool fetch url=https://raw.githubusercontent.com/cmunfun/ros_chnroute/master/CN.rsc
 import file-name=CN.rsc
 file remove CN.rsc
 
-/tool fetch url=https://raw.githubusercontent.com/ruijzhan/chnroute/master/LAN.rsc
+/tool fetch url=https://raw.githubusercontent.com/cmunfun/ros_chnroute/master/LAN.rsc
 import file-name=LAN.rsc
 file remove LAN.rsc"
 ```
@@ -86,7 +86,7 @@ Columns: NAME, VALUE
 ```ros
 /system script
 add dont-require-permissions=no name=gfwlist owner=admin policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="
-/tool fetch url=https://raw.githubusercontent.com/ruijzhan/chnroute/master/gfwlist.rsc
+/tool fetch url=https://raw.githubusercontent.com/cmunfun/ros_chnroute/master/gfwlist.rsc
 /import file-name=gfwlist.rsc
 /file remove gfwlist.rsc
 :log warning \"gfwlist 域名导入成功\""
