@@ -1,7 +1,5 @@
 # chnroute
 
-[![built with Codeium](https://codeium.com/badges/main)](https://codeium.com) [![Daily Make and Commit](https://github.com/cmunfun/ros_chnroute/actions/workflows/main.yaml/badge.svg)](https://github.com/cmunfun/ros_chnroute/actions/workflows/main.yaml)
-
 ## 自动更新的中国 IP 地址和特定域名列表
 
 本项目提供持续更新的中国 IP 地址列表和特定域名列表，并生成可用于 RouterOS 路由器的配置脚本。
